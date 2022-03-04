@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;800&family=Nunito:wght@200;300;400;600&family=Roboto:wght@500;700&display=swap');
+
+* {
+	box-sizing: border-box !important;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.App {
+	background: #1e1e30;
+}
+
+.browserRouter {
+	display: flex;
+}

@@ -1,0 +1,30 @@
+.dashboardContainer {
+	padding-right: 16px;
+}
+
+.paper {
+	border-radius: 14px !important;
+	background-color: #27283c !important;
+	height: 472px;
+	position: relative;
+}
+
+.title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #c7c7c7;
+	margin-left: 24px;
+	padding-top: 16px;
+}
+
+.dashboard__innder {
+	color: #8e8e93;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
