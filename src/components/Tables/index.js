@@ -1,7 +1,7 @@
-import Tables from '../Tables/Tables';
+// import Tables from '../Tables/Tables';
 
-const Table = () => {
-	return <Tables />;
-};
+// const Table = () => {
+// 	return <Tables />;
+// };
 
-export default Table;
+// export default Table;

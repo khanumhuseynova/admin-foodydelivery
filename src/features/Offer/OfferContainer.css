@@ -1,0 +1,21 @@
+.names {
+    font-weight: 500px;
+    color: white;
+    font-size: 20px;
+    border-radius: 0.5px;
+    background-color: #27283C;
+    border-radius: 12px;
+    margin-bottom: 41px;
+    margin-left: 36px;
+    padding: 20px
+}
+
+.data {
+    background-color: white;
+    margin-left: 36px;
+}
+
+.id {
+    color: white;
+    font-size: 100px;
+}
