@@ -1,0 +1,61 @@
+.productCardContainer {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.productsCart {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 9px 1rem !important;
+	width: 196px;
+	height: 273px;
+	background-color: #fff;
+	box-shadow: 0px 4px 4px rgba(57, 57, 57, 0.25);
+	border-radius: 5px;
+}
+
+.productsCart img {
+	width: 160.33px;
+	height: 158px;
+}
+
+.praiceButton {
+	display: flex;
+	direction: row;
+	align-content: space-b;
+	align-items: center;
+}
+
+.productsCart h2 {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.productsCart h3 {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 24px;
+	color: #8e8e93;
+}
+
+.productsCart p {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 24px;
+	color: #00b2a9;
+}
+
+.buttonAction {
+	display: flex;
+	justify-content: space-between;
+}
+
+.buttonAction button {
+	border: none;
+	background-color: #fff;
+	color: #eb5757;
+}

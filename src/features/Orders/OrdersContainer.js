@@ -1,7 +1,7 @@
 import React from 'react';
 
 const OrdersContainer = () => {
-	return <div>Orders</div>;
+	return <div>orders</div>;
 };
 
 export default OrdersContainer;

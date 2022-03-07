@@ -1,7 +1,7 @@
 import React from 'react';
 
 const OfferContainer = () => {
-	return <div>Offer</div>;
+	return <div>Offer start</div>;
 };
 
 export default OfferContainer;

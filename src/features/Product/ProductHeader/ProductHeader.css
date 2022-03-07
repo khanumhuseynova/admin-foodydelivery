@@ -1,0 +1,21 @@
+.productHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 73px;
+	background: #27283c;
+	border-radius: 14px;
+	max-width: 98vh;
+}
+
+.productHeader > h2 {
+	padding: 0 33px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #c7c7c7;
+}
+
+.rightSide {
+	padding-right: 21px;
+}
