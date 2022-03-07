@@ -3,6 +3,8 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import './DashboardContainer.css';
+import Donut from '../../components/Charts/Donut';
+import Spline from '../../components/Charts/Spline';
 
 const DashboardContainer = () => {
 	return (
@@ -11,13 +13,17 @@ const DashboardContainer = () => {
 				<Grid item xs={5}>
 					<Paper className="paper">
 						<div className="title">Orders</div>
-						<div className="orders__inner dashboard__innder">Projects by account</div>
+						<div className="orders__inner dashboard__innder">
+							<Donut />
+						</div>
 					</Paper>
 				</Grid>
 				<Grid item xs={7}>
 					<Paper className="paper">
 						<div className="title">Total Salary</div>
-						<div className="totalSalary__inner dashboard__innder">aaaaaaaaaaaa</div>
+						<div className="totalSalary__inner dashboard__innder">
+							<Spline />
+						</div>
 					</Paper>
 				</Grid>
 				<Grid item xs={7}>

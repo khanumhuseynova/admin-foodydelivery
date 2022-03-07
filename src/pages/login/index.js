@@ -1,6 +1,6 @@
-import LoginContainer from '../../features/Login/LoginContainer';
-const LoginPage = () => {
-	return <LoginContainer />;
-};
+// import LoginContainer from '../../features/Login/LoginContainer';
+// const LoginPage = () => {
+//     return <LoginContainer / > ;
+// };
 
-export default LoginPage;
+// export default LoginPage;
