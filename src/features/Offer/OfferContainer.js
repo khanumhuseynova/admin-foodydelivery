@@ -32,8 +32,12 @@ const OfferContainer = () => {
   console.log(tableData)
 
   return (
-    <div style={{ height: 450, width: '1235px' }}>
-          <h1 className="names">Orders</h1>
+    <div style={{ height: 250, width: '1235px' }}>
+         <h1 className="names">Offers
+          <button className="addButton">+ {' '}
+   ADD OFFERS</button>
+          
+          </h1>
       <DataGrid className="data"
         rows={tableData}
         columns={columns}

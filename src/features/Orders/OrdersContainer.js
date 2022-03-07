@@ -33,7 +33,11 @@ const OrdersContainer = () => {
 
   return (
     <div style={{ height: 450, width: '1235px' }}>
-          <h1 className="names">Orders</h1>
+          <h1 className="names">Orders
+          <button className="addButton">+    ADD ORDERS</button>
+          
+          </h1>
+        
       <DataGrid className="data"
         rows={tableData}
         columns={columns}

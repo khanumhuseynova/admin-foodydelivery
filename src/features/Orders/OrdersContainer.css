@@ -1,4 +1,5 @@
 .names {
+    display: flex;
     font-weight: 500px;
     color: white;
     font-size: 20px;
@@ -7,7 +8,8 @@
     border-radius: 12px;
     margin-bottom: 41px;
     margin-left: 36px;
-    padding: 20px
+    padding: 20px;
+    justify-content: space-between
 }
 
 .data {
@@ -18,4 +20,17 @@
 .id {
     color: white;
     font-size: 100px;
+}
+
+.addButton {
+    color: white;
+    width: 185px;
+    height: 35px;
+    background-color: #C035A2;
+    border-style: solid;
+    border-radius: 12px;
+}
+
+.addButton:hover {
+    background-color: purple
 }
