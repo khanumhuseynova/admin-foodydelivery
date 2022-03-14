@@ -6,17 +6,16 @@ import "./OfferContainer.css"
 
 const columns = [
   { field: 'id', headerName: 'ID',  headerAlign: 'center'},
-  // { field: 'title', headerName: 'ID',  headerAlign: 'center'},
-  // { field: 'body', headerName: 'ID',  headerAlign: 'center'},
-  // { field: 'id', headerName: 'ID',  headerAlign: 'center'},
-  { field: 'title', headerName: 'Customer ID', width: 120,headerAlign: 'center' },
-  { field: 'body', headerName: 'Time', width: 120, headerAlign: 'center' },
-  { field: 'deliveryAddress', headerName: 'Delivery Address', width: 250 , headerAlign: 'center'},
-  { field: 'amount', headerName: 'Amount', width: 120, headerAlign: 'center'},
-  { field: 'paymentMethod', headerName: 'Payment Method', width: 200, headerAlign: 'center' },
-  { field: 'contact', headerName: 'Contact', width: 220, headerAlign: 'center'},
- <DeleteOutlineIcon/>
+  { field: 'title', headerName: 'Title',  headerAlign: 'center', width: 300 },
+  { field: 'description', headerName: 'Description',  headerAlign: 'center', width: 350},
+  { field: 'img', headerName: 'Image',  headerAlign: 'center', width: 300},
+  { field: 'button', headerName: 'Delete', headerAlign: 'center'},
+ 
 ]
+const tableIcons = {
+  
+  Delete: () => <DeleteOutlineIcon />,
+} ;
 
 const OfferContainer = () => {
 
@@ -32,16 +31,29 @@ const OfferContainer = () => {
   console.log(tableData)
 
   return (
-    <div style={{ height: 250, width: '1235px' }}>
+    <div style={{ maxHeight: 450, width: '1235px' }}>
          <h1 className="names">Offers
           <button className="addButton">+ {' '}
    ADD OFFERS</button>
           
           </h1>
       <DataGrid className="data"
+      
         rows={tableData}
         columns={columns}
         pageSize={12}
+        icons={tableIcons}
+        editable={{
+          onRowDelete: selectedRow => new Promise((resolve, _reject) => {
+            const index = selectedRow.tableDatas.id;
+            const updatedRows = [...tableData]
+            updatedRows.splice(index, 1)
+            setTimeout(() => {
+              setTableData(updatedRows)
+              resolve()
+            }, 2000)
+          })
+        }}
       />
     </div>
   )

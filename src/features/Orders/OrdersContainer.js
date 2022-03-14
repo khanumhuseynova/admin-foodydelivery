@@ -6,11 +6,8 @@ import "./OrdersContainer.css"
 
 const columns = [
   { field: 'id', headerName: 'ID',  headerAlign: 'center'},
-  // { field: 'title', headerName: 'ID',  headerAlign: 'center'},
-  // { field: 'body', headerName: 'ID',  headerAlign: 'center'},
-  // { field: 'id', headerName: 'ID',  headerAlign: 'center'},
-  { field: 'title', headerName: 'Customer ID', width: 120,headerAlign: 'center' },
-  { field: 'body', headerName: 'Time', width: 120, headerAlign: 'center' },
+  { field: 'customerID', headerName: 'Customer ID', width: 120,headerAlign: 'center' },
+  { field: 'time', headerName: 'Time', width: 120, headerAlign: 'center' },
   { field: 'deliveryAddress', headerName: 'Delivery Address', width: 250 , headerAlign: 'center'},
   { field: 'amount', headerName: 'Amount', width: 120, headerAlign: 'center'},
   { field: 'paymentMethod', headerName: 'Payment Method', width: 200, headerAlign: 'center' },
@@ -32,7 +29,7 @@ const OrdersContainer = () => {
   console.log(tableData)
 
   return (
-    <div style={{ height: 450, width: '1235px' }}>
+    <div style={{maxHeight: 450, width: '1235px' }}>
           <h1 className="names">Orders
           <button className="addButton">+    ADD ORDERS</button>
           
@@ -41,8 +38,13 @@ const OrdersContainer = () => {
       <DataGrid className="data"
         rows={tableData}
         columns={columns}
+        options={{
+          headerStyle:{size:'80px'}
+         }}
         pageSize={12}
+        
       />
+
     </div>
   )
 }
