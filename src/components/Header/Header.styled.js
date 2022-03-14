@@ -32,7 +32,7 @@ export const ImgAvatar = styled.img`
 	border-radius: 50%;
 `;
 
-export const HeaderLogo = styled.div`
+export const HeaderLogo = styled.a`
 	display: flex;
 	align-items: center;
 	cursor: pointer;

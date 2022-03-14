@@ -30,3 +30,12 @@
 .addButton:hover {
 	transform: scale(1.05);
 }
+
+.restaurantsHeader__rightSide {
+	display: flex;
+	align-items: center;
+}
+
+.restaurant__addButton {
+	margin-left: 27px;
+}

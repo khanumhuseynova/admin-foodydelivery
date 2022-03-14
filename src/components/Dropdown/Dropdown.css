@@ -1,0 +1,28 @@
+.dropdown {
+	width: 200px;
+	height: 35px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.dropdown-content {
+	position: absolute;
+	top: -8px;
+	width: 100%;
+	width: 199px;
+	height: 35px;
+	padding-left: 18px;
+	background: #5a5b70;
+	border-radius: 14px;
+	color: #f2f2f2;
+	box-shadow: 3px 6px 10px 6px rgba(0, 0, 0, 0.06);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	z-index: 3;
+	margin-top: 8px;
+	cursor: pointer;
+	border: none;
+}

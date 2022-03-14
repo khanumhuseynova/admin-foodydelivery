@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Stack, Pagination } from '@mui/material';
 
-export const StackCustom = styled(Stack)`
+export const StackStyle = styled(Stack)`
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -15,7 +15,7 @@ export const StackCustom = styled(Stack)`
 		}
 	}
 `;
-export const PaginationCustom = styled(Pagination).attrs(() => ({}))`
+export const PaginationStyle = styled(Pagination).attrs(() => ({}))`
 	& button {
 		width: 64px;
 		height: 64px;

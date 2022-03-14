@@ -1,7 +1,7 @@
 .productCardContainer {
 	display: flex;
 	justify-content: space-between;
-	flex-direction: row;
+	flex-flow: row wrap;
 }
 
 .productsCart {
@@ -9,17 +9,27 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	margin: 9px 1rem !important;
+	margin: 9px 28px !important;
 	width: 196px;
 	height: 273px;
 	background-color: #fff;
 	box-shadow: 0px 4px 4px rgba(57, 57, 57, 0.25);
 	border-radius: 5px;
+	cursor: pointer;
+}
+
+.productsCartHover {
+	transition: all 0.2s ease;
+}
+
+.productsCartHover:hover {
+	transform: scale(1.05);
 }
 
 .productsCart img {
 	width: 160.33px;
 	height: 158px;
+	object-fit: contain;
 }
 
 .praiceButton {
@@ -52,10 +62,18 @@
 .buttonAction {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 10px;
 }
 
 .buttonAction button {
 	border: none;
 	background-color: #fff;
 	color: #eb5757;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 740px) {
+	.productCardContainer {
+		justify-content: center;
+	}
 }

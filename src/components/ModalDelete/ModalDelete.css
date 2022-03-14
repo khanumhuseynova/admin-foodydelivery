@@ -1,0 +1,68 @@
+.modalDelete {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.08);
+	box-shadow: 0px 3px 8px -2px rgba(0, 0, 0, 0.2) !important;
+	border-radius: 10px !important;
+	z-index: 5;
+}
+
+.modal__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	padding: 30px 60px 40px;
+	top: 50%;
+	left: 50%;
+	background-color: #fff;
+	transform: translate(-50%, -50%);
+}
+.modal__title {
+	font-weight: 600;
+	font-size: 28px !important;
+	line-height: 24px;
+	color: #000000;
+}
+
+.modal__text {
+	margin-top: 12px;
+	text-align: center;
+	font-weight: normal;
+	font-size: 18px !important;
+	line-height: 24px;
+	color: rgba(79, 79, 79, 0.836) !important;
+	width: 270px;
+}
+
+.modal__button {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.modal__button button {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	border: 2px solid #bdbdbd;
+	border-radius: 4px;
+	color: #bdbdbd;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.25px;
+	padding: 7px 30px;
+}
+
+.modal__red {
+	background-color: #d63626 !important;
+	color: #ffffff !important;
+	border: 2px solid #d63626 !important;
+	margin-left: 30px;
+}

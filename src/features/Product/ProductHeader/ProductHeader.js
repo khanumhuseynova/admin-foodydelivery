@@ -3,9 +3,10 @@ import './ProductHeader.css';
 
 const ProductHeader = () => {
 	return (
-		<div className="productHeader">
-			<h2>Products</h2>
-		</div>
+		<h2 className="names">
+			Product
+			<button className="addButton">+ ADD ORDERS</button>
+		</h2>
 	);
 };
 
